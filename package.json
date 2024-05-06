@@ -1,0 +1,21 @@
+{
+  "name": "prop-block",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "npm workspace frontend start",
+    "start:blockchain": "npm workspace blockchain truffle compile",
+    "start:backend": "npm workspace backend node index.js",
+    "build": "npm workspaces run build"
+  },
+  "workspaces": [
+    "frontend",
+    "blockchain",
+    "backend"
+  ],
+  "keywords": [],
+  "author": "VG",
+  "license": "ISC"
+}
