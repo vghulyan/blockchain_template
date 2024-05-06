@@ -1,6 +1,10 @@
 const fs = require("fs-extra");
 const path = require("path");
 
+/**
+ * Copy Contract address to frontend/src/contracts
+ */
+
 // Update paths assuming the script is now located in the blockchain/utils directory
 const sourcePath = path.join(
   __dirname,
@@ -28,9 +32,6 @@ async function modifyJsonAndCopy() {
       jsonData[newKey] = jsonData[oldKey]; // Assign old key's value to the new key
       delete jsonData[oldKey]; // Remove the old key
     }
-    console.log("old key: ", oldKey);
-    console.log("destination path: ", destinationPath);
-    console.log("json data: ", jsonData);
 
     // Write the modified JSON to the new location
     await fs.writeJson(destinationPath, jsonData, { spaces: 2 }); // Use { spaces: 2 } for pretty-printing

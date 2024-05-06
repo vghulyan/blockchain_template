@@ -2,6 +2,10 @@ require("dotenv").config();
 const fs = require("fs-extra");
 const path = require("path");
 
+/**
+ * Copy abi to frontend/src/contracts
+ */
+
 const contractName = process.env.CONTRACT_NAME ?? "MyFirstContract"; // Assume CONTRACT_NAME is set in your .env
 
 const artifactsDir = path.resolve(
