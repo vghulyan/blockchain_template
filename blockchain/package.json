@@ -3,11 +3,17 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "deploy": "npx hardhat ignition deploy ./ignition/modules/MyFirstContract.js --network sepolia",
+    "deploy:UpgradableV1": "npx hardhat run ./ignition/modules/UpgradableContractV1.js --network sepolia",
+    "deploy:UpgradableV2": "npx hardhat run ./ignition/modules/UpgradableContractV2.js --network sepolia",
+    "deploy:UpgradableV3": "npx hardhat run ./ignition/modules/UpgradableContractV3.js --network sepolia",
     "copy-address": "node ./utils/copyDeployedAddress.js",
     "copy-contract": "node ./utils/copyArtifacts.js"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "@openzeppelin/hardhat-upgrades": "^3.1.0",
     "hardhat": "^2.22.3"
   },
   "dependencies": {

@@ -1,17 +1,11 @@
 require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
+require("@openzeppelin/hardhat-upgrades");
 
 const { API_URL, PRIVATE_KEY } = process.env;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.24",
-  settings: {
-    optimizer: {
-      enabled: true,
-      runs: 1000,
-    },
-  },
   // defaultNetwork: "localhost",
   defaultNetwork: "sepolia",
   networks: {
@@ -30,6 +24,15 @@ module.exports = {
     //   timeout: 120000,
     //   gasPrice: 10 * 10**9,
     // },
+  },
+  solidity: {
+    version: "0.8.24",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+    },
   },
   mocha: {
     timeout: 40000,
