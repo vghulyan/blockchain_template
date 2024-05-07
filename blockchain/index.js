@@ -33,6 +33,8 @@ const main_v1 = async () => {
   console.log("Contract 2: After Setting the value: ", parseInt(a));
 };
 
+// ********* Either Ru main_v2 or main_v3
+
 // ====================================================
 // *** CONTRACT UPGRADED 2
 // ====================================================
@@ -81,7 +83,8 @@ const main_v3 = async () => {
 // ******* HOW TO RUN ***********
 // 1. Uncomment: main_v1() then run
 // 2. Then comment out the v1 and execute v2
+// 3. Then comment out the v1 and execute v3
 // ==============================
 // main_v1();
 // main_v2();
-main_v3();
+// main_v3();
