@@ -6,6 +6,10 @@
     node: v20.12.2
 ```
 
+## Either git clone it or create a project
+
+### Steps
+
 #### 1. Create a New Directory for Your Project:
 
 ```
@@ -29,12 +33,12 @@
 
 ```
     {
-    "private": true,
-    "workspaces": [
-        "frontend",
-        "blockchain",
-        "backend"
-    ]
+        "private": true,
+        "workspaces": [
+            "frontend",
+            "blockchain",
+            "backend"
+        ]
     }
 ```
 
@@ -59,7 +63,7 @@
     $> npm install express
 ```
 
-#### 6. Add Scripts in Root 'package.json'
+#### 6. Add Scripts in the 'package.json'
 
 ```
     "scripts": {
