@@ -6,6 +6,8 @@
     "deploy:UpgradableV1": "npx hardhat run ./ignition/modules/UpgradableContractV1.js --network sepolia",
     "deploy:UpgradableV2": "npx hardhat run ./ignition/modules/UpgradableContractV2.js --network sepolia",
     "deploy:UpgradableV3": "npx hardhat run ./ignition/modules/UpgradableContractV3.js --network sepolia",
+    "deploy:Box": "npx hardhat run ./ignition/modules/Box.js --network sepolia",
+    "deploy:BoxV2": "npx hardhat run ./ignition/modules/BoxV2.js --network sepolia",
     "copy-address": "node ./utils/copyDeployedAddress.js",
     "copy-contract": "node ./utils/copyArtifacts.js"
   },

@@ -5,6 +5,16 @@
       "address": "0x3a4B0F96DD8AE3BF6d1B9aE1049f25D3eCd107d9",
       "txHash": "0x25277450908a8128e8a48407153091c51830efc79be87283369da7304b7874aa",
       "kind": "transparent"
+    },
+    {
+      "address": "0x9fbef89b59CdaB9feD504BFB3ecC6b23A92785B1",
+      "txHash": "0x917a548d7fdd5bb8acb03171866a0c1ef651cbf5f40c73bb10c99646b39b67aa",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xFBAec7b60207A680196612510D411197B02b4dCC",
+      "txHash": "0x6c45e233bab0a616a10c6d58c1d0637e97973a6d15a251513e76b86dc6b44eec",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -213,6 +223,54 @@
             }
           ]
         }
+      }
+    },
+    "240092d8fdacba37edfbdd6e82888d07dd12b2de0e5ab51375ea410d12c7dfcb": {
+      "address": "0x330Ba67662BE929e6Be1aB1B76a3896786e38b8e",
+      "txHash": "0xebd3980dbb2c4a0a91e8a2345f2aa87a0c5ac25b898f5e442069b013f8c25ec4",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "d048cca7298c769e7576f1ca403e8ac7cd7942c491258996ab206662207c47b1": {
+      "address": "0xEC489beDf7f52D0280CdBcdBAb5ca37310D034D0",
+      "txHash": "0xd82b27e25fbe89800dd12802dd8103ad6ffbf4baf14824d1853422058766d91d",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "BoxV2",
+            "src": "contracts/BoxV2.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
       }
     }
   }
